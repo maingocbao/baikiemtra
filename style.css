@@ -1,0 +1,264 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+p,
+h1 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+#wrapper {
+  max-width: 1918px;
+  margin: 0 auto;
+  display: flex;
+}
+.logo a {
+  cursor: pointer;
+}
+.menu-item:hover {
+  background: #5c5c5c;
+}
+.menu-item {
+  padding: 14px 0 11px 16px;
+  border-bottom: 1px solid #5c5c5c;
+  cursor: pointer;
+}
+.menu-links {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "Mulish", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+.header {
+  width: 8%;
+  background: #191718;
+}
+.main {
+  width: 92%;
+}
+
+.container {
+  padding: 0 130px;
+}
+.logo {
+  text-align: center;
+  padding: 20px 0 30px 0;
+}
+.text-cent {
+  background-color: #efefef;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.text-padding {
+  padding: 38px 269px;
+}
+.text-title {
+  font-family: "Mulish", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  padding-bottom: 18px;
+  color: #000000;
+}
+.text-decoration {
+  font-family: "Mulish", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.lorem {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.lorem-decoretion img {
+  float: left;
+  padding-right: 16px;
+}
+.lorem-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  font-family: "Mulish", sans-serif;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 18px;
+  color: #000000;
+}
+
+.lorem-decoretion {
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 16px;
+  line-height: 19px;
+  font-family: "Mulish", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  width: 470px;
+  height: 252px;
+}
+
+.footer {
+  margin-top: 140px;
+  background-color: #ffffff;
+  border-top: 1px solid #dedede;
+}
+.footer p {
+  padding: 30px 0 30px 130px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3e3e3e;
+}
+.fa-bars:before,
+.fa-navicon:before {
+  content: "\f0c9";
+  font-size: 40px;
+}
+.fa-solid {
+  display: none;
+  font-weight: 900;
+  line-height: 90px;
+}
+.lorem-css,
+.lorem-html,
+.lorem-url {
+  margin-bottom: 40px;
+}
+@media (max-width: 1409px) {
+  .lorem-decoretion {
+    width: auto;
+    height: auto;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .text-padding {
+    padding: 38px 180px;
+  }
+  .main {
+    width: 90%;
+  }
+  .header {
+    width: 10%;
+  }
+}
+@media (max-width: 1200px) {
+  .header {
+    width: 14%;
+  }
+  .main {
+    width: 86%;
+  }
+  .container {
+    padding: 0 100px;
+  }
+  .text-padding {
+    padding: 38px 130px;
+  }
+}
+@media (max-width: 992px) {
+  .fa-solid {
+    display: block;
+  }
+  .text-padding {
+    padding: 38px 100px;
+  }
+  .header {
+    display: none;
+  }
+  .main {
+    width: 100%;
+  }
+  .container {
+    padding: 0px 60px;
+  }
+  .logo img {
+    width: 30%;
+  }
+  .logo {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+  .text-padding {
+    padding: 38px 80px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    padding: 0;
+  }
+  .logo img {
+    width: 40%;
+    height: 20%;
+  }
+  .fa-solid {
+    line-height: 50px;
+  }
+  .text-padding {
+    padding: 38px 40px;
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 200;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+.active {
+  background-color: rgba(0, 0, 0, 0.387);
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+.overlay-nav {
+  padding: 14px 0 11px 16px;
+  border-bottom: 1px solid #5c5c5c;
+  height: 40px;
+  cursor: pointer;
+}
+.overlay-nav a {
+  color: #000000;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "Mulish", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
