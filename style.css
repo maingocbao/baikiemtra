@@ -18,6 +18,7 @@ a {
 }
 .logo a {
   cursor: pointer;
+  float: left;
 }
 .menu-item:hover {
   background: #5c5c5c;
@@ -130,7 +131,7 @@ a {
 .fa-solid {
   display: none;
   font-weight: 900;
-  line-height: 90px;
+  line-height: 55px;
 }
 .lorem-css,
 .lorem-html,
@@ -187,10 +188,10 @@ a {
   .logo img {
     width: 30%;
   }
-  .logo {
+  /* .logo {
     display: flex;
     justify-content: space-between;
-  }
+  } */
 }
 @media (min-width: 576px) and (max-width: 768px) {
   .container {
@@ -209,7 +210,7 @@ a {
     height: 20%;
   }
   .fa-solid {
-    line-height: 50px;
+    line-height: 40px;
   }
   .text-padding {
     padding: 38px 40px;
